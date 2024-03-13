@@ -14,9 +14,6 @@
   text-align: center;
   font-family: $font-family-montserrat;
 
-  @media (min-width: 768px) {
-    height: 200px;
-  }
   &__text {
     @media (min-width: 768px) {
       display: flex;
@@ -24,12 +21,8 @@
       gap: 8px;
     }
     &--title {
-      gap: 10px;
       font-size: 4rem;
       font-weight: bold;
-      @media screen {
-        width: 100%;
-      }
     }
     &--icon {
       font-size: 4.2rem;
@@ -37,13 +30,8 @@
     &--subtitle {
       font-size: 1.8rem;
       font-weight: 300;
-      @media screen {
-        padding: 20px;
-      }
+      padding: 20px;
     }
-  }
-  a {
-    color: white;
   }
   &__btnAdd {
     @include button(rgba(#ff9985, 0.8), white);
