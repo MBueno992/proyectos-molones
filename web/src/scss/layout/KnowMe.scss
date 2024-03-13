@@ -2,9 +2,12 @@
 @import '../core/Variables';
 
 .aboutCards {
-  margin: 30px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
 }
-
 .personal {
   width: 90%;
   max-width: 550px;

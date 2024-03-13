@@ -25,9 +25,11 @@ function Card({ data, style }) {
         <section className="info__project">
           <p className="info__project--subtitle">Personal Project Card</p>
           <hr className="info__project--line" />
-          <h2 className="info__project--title">
-            {name || 'Elegant Workspace'}
-          </h2>
+          <a href="http://www.google.es" target="_blank" rel="noreferrer">
+            <h2 className="info__project--title">
+              {name || 'Elegant Workspace'}
+            </h2>
+          </a>
           <p className="info__project--slogan">
             {slogan || 'Diseños Exclusivos'}
           </p>

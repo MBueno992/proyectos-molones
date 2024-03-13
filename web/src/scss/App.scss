@@ -1,11 +1,9 @@
 @import 'core/Reset';
 @import 'core/Variables';
 
-// html {
-//   // height: 100%;
-//   // background-color: $color-dark;
-// }
 .container {
+  min-height: 100vh;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

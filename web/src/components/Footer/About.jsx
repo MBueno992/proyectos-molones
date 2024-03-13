@@ -1,4 +1,4 @@
-import '../../scss/layout/KnowUs.scss';
+import '../../scss/layout/KnowMe.scss';
 
 function About({ image, nombre, quote, desc, linkedin, github, newStyle }) {
   return (
