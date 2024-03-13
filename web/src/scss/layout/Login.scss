@@ -1,58 +1,58 @@
-@import '../core/Reset';
-@import '../core/Variables';
+// @import '../core/Reset';
+// @import '../core/Variables';
 
-.login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 80vh;
+// .login {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100vw;
+//   height: 80vh;
 
-  &__form {
-    padding: 50px;
-    color: #ffb5a7;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #ffb5a7;
-    gap: 10px;
-    font-size: 2rem;
-    border-radius: 20px;
-    backdrop-filter: blur(5px);
-    margin: 30px;
+//   &__form {
+//     padding: 50px;
+//     color: #ffb5a7;
+//     display: flex;
+//     flex-direction: column;
+//     border: 1px solid #ffb5a7;
+//     gap: 10px;
+//     font-size: 2rem;
+//     border-radius: 20px;
+//     backdrop-filter: blur(5px);
+//     margin: 30px;
 
-    h3 {
-      font-size: 2rem;
-      text-align: center;
-      margin-bottom: 10px;
-    }
-    input {
-      background-color: $color-white;
-      border: none;
-      padding: 10px;
-      font-size: 1.4rem;
-      border-radius: 10px;
-      color: $color-dusk;
-      box-shadow: 0 0.4rem #fec89a;
-      cursor: pointer;
-      margin-bottom: 10px;
-    }
-    &--login {
-      font-size: 1rem;
-      font-weight: bold;
-      text-transform: uppercase;
-      background-color: #ffb5a7;
-      border-radius: 20px;
-      border: none;
-      width: 100px;
-      padding: 5px 10px;
-      align-self: center;
-    }
-    &--text {
-      text-align: center;
-      font-size: 1.8rem;
-      a {
-        text-decoration: none;
-      }
-    }
-  }
-}
+//     h3 {
+//       font-size: 2rem;
+//       text-align: center;
+//       margin-bottom: 10px;
+//     }
+//     input {
+//       background-color: $color-white;
+//       border: none;
+//       padding: 10px;
+//       font-size: 1.4rem;
+//       border-radius: 10px;
+//       color: $color-dusk;
+//       box-shadow: 0 0.4rem #fec89a;
+//       cursor: pointer;
+//       margin-bottom: 10px;
+//     }
+//     &--login {
+//       font-size: 1rem;
+//       font-weight: bold;
+//       text-transform: uppercase;
+//       background-color: #ffb5a7;
+//       border-radius: 20px;
+//       border: none;
+//       width: 100px;
+//       padding: 5px 10px;
+//       align-self: center;
+//     }
+//     &--text {
+//       text-align: center;
+//       font-size: 1.8rem;
+//       a {
+//         text-decoration: none;
+//       }
+//     }
+//   }
+// }

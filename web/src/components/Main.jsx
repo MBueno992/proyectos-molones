@@ -14,7 +14,7 @@ function Main({
 }) {
   return (
     <main className="mainBtn">
-      <Button url="/" text="Ver proyectos" style="header__title--see-btn" />
+      <Button url="/" text="Ver proyectos" style="header__btnView" />
       <div className="mainSection">
         <PreviewCard data={data} />
         <Form

@@ -12,7 +12,7 @@ function ProjectsList({ project }) {
       <Button
         url="/newproject"
         text="Añadir proyectos"
-        style="header__title--new-btn"
+        style="header__btnAdd"
       />
 
       <div className="landing__cards">{renderProjectCards}</div>
