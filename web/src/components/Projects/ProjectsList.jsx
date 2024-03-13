@@ -1,9 +1,9 @@
 import Card from './Card';
 import '../../scss/layout/Landing.scss';
 import Button from '../Button';
+import PropTypes from 'prop-types';
 
 function ProjectsList({ project }) {
-  console.log(project);
   const renderProjectCards = project.map((data, i) => {
     return <Card data={data} key={i} style="cardProject" />;
   });
@@ -19,5 +19,9 @@ function ProjectsList({ project }) {
     </>
   );
 }
+
+ProjectsList.propTypes = {
+  project: PropTypes.array,
+};
 
 export default ProjectsList;

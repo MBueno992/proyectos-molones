@@ -126,12 +126,12 @@ function App() {
 
   return (
     <div className="container">
+      <Header />
       <Routes>
         <Route
           path="/"
           element={
             <>
-              <Header text="Proyectos molones" />
               <ProjectsList project={project} />
             </>
           }
@@ -140,7 +140,6 @@ function App() {
           path="/newProject"
           element={
             <>
-              <Header text="Volver al inicio" />
               <Main
                 data={data}
                 handleChange={dataForm}
@@ -157,7 +156,6 @@ function App() {
           path="/know-me"
           element={
             <>
-              <Header text="Volver al inicio" />
               <KnowUs />
             </>
           }

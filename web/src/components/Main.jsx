@@ -2,6 +2,7 @@ import PreviewCard from './PreviewCard';
 import Form from './Form/Form';
 import Button from './Button';
 import '../scss/layout/Main.scss';
+import PropTypes from 'prop-types';
 
 function Main({
   data,
@@ -27,8 +28,18 @@ function Main({
           handleReset={handleReset}
         />
       </div>
-      {/*enviamos nombre de la prop */}
     </main>
   );
 }
+
+Main.propTypes = {
+  data: PropTypes.object,
+  handleChange: PropTypes.func,
+  validation: PropTypes.func,
+  urlCard: PropTypes.string,
+  handleCreateCard: PropTypes.func,
+  errorMsg: PropTypes.object,
+  handleReset: PropTypes.func,
+};
+
 export default Main;

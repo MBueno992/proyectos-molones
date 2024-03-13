@@ -1,4 +1,5 @@
 import '../../scss/layout/KnowMe.scss';
+import PropTypes from 'prop-types';
 
 function About({ image, nombre, quote, desc, linkedin, github, newStyle }) {
   return (
@@ -28,5 +29,15 @@ function About({ image, nombre, quote, desc, linkedin, github, newStyle }) {
     </section>
   );
 }
+
+About.propTypes = {
+  image: PropTypes.string,
+  nombre: PropTypes.string,
+  quote: PropTypes.string,
+  desc: PropTypes.string,
+  linkedin: PropTypes.string,
+  github: PropTypes.string,
+  newStyle: PropTypes.string,
+};
 
 export default About;

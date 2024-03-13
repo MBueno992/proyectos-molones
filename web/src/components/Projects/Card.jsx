@@ -1,19 +1,10 @@
 import '../../scss/layout/Card.scss';
 import user from '../../images/user.svg';
+import PropTypes from 'prop-types';
 
 function Card({ data, style }) {
-  const {
-    name,
-    slogan,
-    technologies,
-    repo,
-    demo,
-    desc,
-    author,
-    job,
-    photo,
-    image,
-  } = data;
+  const { name, slogan, technologies, repo, demo, desc, author, job, photo } =
+    data;
   return (
     <section className={`card ${style}`}>
       <div className="card__top">
@@ -66,5 +57,10 @@ function Card({ data, style }) {
     </section>
   );
 }
+
+Card.propTypes = {
+  data: PropTypes.object,
+  style: propTypes.string,
+};
 
 export default Card;

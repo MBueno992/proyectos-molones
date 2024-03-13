@@ -2,6 +2,7 @@ import '../../scss/layout/Form.scss';
 import CreateCard from './CreateCard';
 import FormInput from './FormInput';
 import GetAvatar from '../GetAvatar';
+import PropTypes from 'prop-types';
 
 function Form({
   handleChange,
@@ -127,5 +128,15 @@ function Form({
     </section>
   );
 }
+
+Form.propTypes = {
+  data: PropTypes.object,
+  handleChange: PropTypes.func,
+  validation: PropTypes.func,
+  urlCard: PropTypes.string,
+  handleCreateCard: PropTypes.func,
+  errorMsg: PropTypes.object,
+  handleReset: PropTypes.func,
+};
 
 export default Form;

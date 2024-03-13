@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function CreateCard({ urlCard, validation }) {
   return (
     <section className="url">
@@ -9,4 +11,8 @@ function CreateCard({ urlCard, validation }) {
   );
 }
 
+CreateCard.propTypes = {
+  urlCard: PropTypes.string,
+  validation: PropTypes.func,
+};
 export default CreateCard;

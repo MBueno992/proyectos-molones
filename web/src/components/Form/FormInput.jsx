@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function FormInput({ placeholder, name, id, data }) {
   return (
     <>
@@ -12,5 +14,12 @@ function FormInput({ placeholder, name, id, data }) {
     </>
   );
 }
+
+FormInput.propTypes = {
+  placeholder: PropTypes.string,
+  name: PropTypes.string,
+  id: PropTypes.string,
+  data: PropTypes.string,
+};
 
 export default FormInput;
