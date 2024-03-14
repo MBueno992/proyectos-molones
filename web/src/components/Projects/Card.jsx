@@ -60,7 +60,7 @@ function Card({ data, style }) {
 
 Card.propTypes = {
   data: PropTypes.object,
-  style: propTypes.string,
+  style: PropTypes.string,
 };
 
 export default Card;

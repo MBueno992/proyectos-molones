@@ -5,7 +5,7 @@ import Button from '../Button';
 function KnowMe() {
   return (
     <div className="aboutCards">
-      <Button url="/" text="Ver proyectos" style="header__title--see-btn" />
+      <Button url="/" text="Ver proyectos" style="header__btnView" />
       <About
         image={Marta}
         nombre="Marta Bueno"

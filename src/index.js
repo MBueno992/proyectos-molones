@@ -69,81 +69,6 @@ server.listen(port, () => {
 const statictServer = './src/public-react';
 server.use(express.static(statictServer));
 
-// //Login
-// server.post('/', async (req, resp) => {
-//   const { email, password } = req.body;
-//   const connect = await getConnection();
-//   const selectUser = 'SELECT * FROM authors WHERE email = ?';
-//   const [resultSelect] = await connect.query(selectUser, [email]);
-//   if (resultSelect.length !== 0) {
-//     const isOkPass = await bcrypt.compare(
-//       password,
-//       resultSelect[0].hashed_password
-//     );
-//     console.log(resultSelect);
-//     if (isOkPass) {
-//       const infoToken = {
-//         id: resultSelect[0].idAuthor,
-//         email: resultSelect[0].email,
-//       };
-//       const token = generateToken(infoToken);
-//       resp.json({
-//         success: true,
-//         token: token,
-//       });
-//     } else {
-//       resp.json({
-//         success: false,
-//         msg: 'Contraseña incorrecta.',
-//       });
-//     }
-//   } else {
-//     resp.json({
-//       success: false,
-//       msg: 'Por favor, comprueba el correo electrónico.',
-//     });
-//   }
-//   connect.end();
-// });
-
-// //Registro
-// server.post('/register', async (req, resp) => {
-//   const { author, email, password } = req.body;
-//   console.log(req.body);
-//   const connect = await getConnection();
-//   const selectUser = 'SELECT * FROM authors WHERE email = ?';
-//   const [resultSelect] = await connect.query(selectUser, [email]);
-//   if (!validateEmail(email)) {
-//     return resp.json({
-//       success: false,
-//       msg: 'El correo electrónico no es válido',
-//     });
-//   }
-//   if (resultSelect.length === 0) {
-//     const passwordHashed = await bcrypt.hash(password, 10);
-//     const insertUser =
-//       'INSERT INTO authors (author, email, hashed_password) VALUES (?, ?, ?)';
-//     const [resultUser] = await connect.query(insertUser, [
-//       author,
-//       email,
-//       passwordHashed,
-//     ]);
-//     // const userId = resultUser.insertId;
-//     // const insertWizard =
-//     //   'INSERT INTO authors (author, job, email, hashed_password) VALUES (?, ?, ?, ?)';
-//     // const [resultWizard] = await connect.query(insertWizard, [
-//     // w
-//     //   userId,
-//     // ]);
-//     resp.json({ success: true, data: resultUser });
-//   } else {
-//     resp.json({
-//       success: false,
-//       msg: 'Ese correo electrónico ya está registrado.',
-//     });
-//   }
-// });
-
 //Pinta los proyectos
 server.get('/projects', async (req, res) => {
   const connect = await getConnection();
@@ -180,7 +105,7 @@ server.post('/newProject', async (req, res) => {
   connect.end();
   res.json({
     success: true,
-    cardURL: `https://project-promo-v-module-4-team-3.onrender.com/detail/${resultsProject.insertId}`,
+    cardURL: `https://proyectos-molones-eun7.onrender.com/detail/${resultsProject.insertId}`,
   });
 });
 
