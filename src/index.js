@@ -105,7 +105,7 @@ server.post('/newProject', async (req, res) => {
   connect.end();
   res.json({
     success: true,
-    cardURL: `https://proyectos-molones-eun7.onrender.com/detail/${resultsProject.insertId}`,
+    cardURL: `https://proyectos-molones-xz0d.onrender.com/detail/${resultsProject.insertId}`,
   });
 });
 

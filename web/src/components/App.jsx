@@ -36,7 +36,7 @@ function App() {
   }, [data]);
 
   useEffect(() => {
-    fetch('https://proyectos-molones-eun7.onrender.com/projects')
+    fetch('https://proyectos-molones-xz0d.onrender.com/projects')
       .then((response) => response.json())
       .then((data) => {
         setProject(data.data);
@@ -111,7 +111,7 @@ function App() {
   };
 
   const handleCreateCard = () => {
-    fetch('https://proyectos-molones-eun7.onrender.com/newProject', {
+    fetch('https://proyectos-molones-xz0d.onrender.com/newProject', {
       method: 'POST',
       body: JSON.stringify(data),
       headers: { 'Content-type': 'application/json' },

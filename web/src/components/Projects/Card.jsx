@@ -16,7 +16,11 @@ function Card({ data, style }) {
         <section className="info__project">
           <p className="info__project--subtitle">Personal Project Card</p>
           <hr className="info__project--line" />
-          <a href="http://www.google.es" target="_blank" rel="noreferrer">
+          <a
+            href={`https://proyectos-molones-xz0d.onrender.com${data.idProject}`}
+            target="_blank"
+            rel="noreferrer"
+          >
             <h2 className="info__project--title">
               {name || 'Elegant Workspace'}
             </h2>
