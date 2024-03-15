@@ -11,7 +11,7 @@ function PreviewCard({ data }) {
         src={data.image || project}
         alt={data.slogan || ''}
       />
-      <Card data={data} />
+      <Card data={data} style="cardPreview" />
     </section>
   );
 }

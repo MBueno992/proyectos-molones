@@ -9,7 +9,7 @@ function FormInput({ placeholder, name, id, data }) {
         placeholder={placeholder}
         name={name}
         id={id}
-        defaultValue={data}
+        value={data}
       />
     </>
   );

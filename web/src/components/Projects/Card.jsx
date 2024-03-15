@@ -16,15 +16,22 @@ function Card({ data, style }) {
         <section className="info__project">
           <p className="info__project--subtitle">Personal Project Card</p>
           <hr className="info__project--line" />
-          <a
-            href={`https://proyectos-molones-xz0d.onrender.com${data.idProject}`}
-            target="_blank"
-            rel="noreferrer"
-          >
+          {style === 'cardPreview' ? (
             <h2 className="info__project--title">
               {name || 'Elegant Workspace'}
             </h2>
-          </a>
+          ) : (
+            <a
+              href={`https://proyectos-molones-xz0d.onrender.com/detail/${data.idProject}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <h2 className="info__project--title">
+                {name || 'Elegant Workspace'}
+              </h2>
+            </a>
+          )}
+
           <p className="info__project--slogan">
             {slogan || 'Diseños Exclusivos'}
           </p>
