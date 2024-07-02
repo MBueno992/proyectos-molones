@@ -39,7 +39,7 @@ function App() {
     fetch('https://proyectos-molones-xz0d.onrender.com/projects')
       .then((response) => response.json())
       .then((data) => {
-        setProject(data.data);
+        setProject(data);
       });
   }, []);
 
