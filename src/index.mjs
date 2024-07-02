@@ -38,7 +38,7 @@ server.post('/newProject', async (req, res) => {
   try {
     const insertAuthor =
       'INSERT INTO authors (author, job, photo) VALUES (?, ?, ?)';
-    const [resultsAuthor] = await connect.query(insertAuthor, [
+    const [resultsAuthor] = await turso.execute(insertAuthor, [
       req.body.author,
       req.body.job,
       req.body.photo,
@@ -46,7 +46,7 @@ server.post('/newProject', async (req, res) => {
     const fkAuthor = resultsAuthor.insertId;
     const insertProject =
       'INSERT INTO projects (name, slogan, technologies, repo, demo, `desc`, image, fk_idAuthors) VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
-    const [resultsProject] = await connect.query(insertProject, [
+    const [resultsProject] = await turso.execute(insertProject, [
       req.body.name,
       req.body.slogan,
       req.body.technologies,
